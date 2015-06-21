@@ -7,11 +7,13 @@
 ## X_train_new and X_text_new data frames are subset of X_train and X_test data frame respectively
 ## These new data frames have the measurements of mean and std in columns only
 ## X_merge is data frame that is formed after joining of the two data frames
-## Data is independents tidy data frame with the average of each variable for each activity and each subject
 ## Working-
 ## Line 1-12 The data sets and vectors are declared,features is initially have 2 columns,the 2nd column contains features
 ## Line 13-14 Column names of the X_train and X_test data sets have taken from feature variable 
 ## Line 16-17 mean and std are vectors containing index of the columns that have measurements of mean and std
 ## Line 20-22 New data frames having having measurement of mean and std are formed
+## Line 26-28 To these new data frames activity and subject columns are added and test and train observations are merged together
+## Line 30-31 The columns name for subject and activity are renamed 
+## Line 33-35 New data set with average of each variable for each activity and each subject has been calculated and appended into tidydata.txt 
 
 
