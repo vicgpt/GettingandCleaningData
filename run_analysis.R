@@ -20,7 +20,6 @@ std<-grep("std()",features,fixed = TRUE)
 X_test_new<-cbind(X_test[,std],X_test[,mean])
 X_train_new<-cbind(X_train[,std],X_train[,mean])
 identical(colnames(X_test_new),colnames(X_train_new))
-X_merge<-rbind(X_train_new[],X_test_new[])
 
 
 
