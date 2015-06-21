@@ -32,6 +32,6 @@ colnames(X_merge)[67]<-"Activity"
 colnames(X_merge)[68]<-"Subject"
 
 library(plyr);
-Data2<-aggregate(X_merge,by=list(X_merge$Activity,X_merge$Subject), mean)
-write.table(Data2[,3:70], file = "tidydata.txt",row.name=FALSE)
+Data<-aggregate(X_merge,by=list(X_merge$Activity,X_merge$Subject), mean)
+write.table(Data[,3:70], file = "tidydata.txt",row.name=FALSE)
 
